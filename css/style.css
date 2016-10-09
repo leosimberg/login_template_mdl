@@ -1,0 +1,91 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    outline: none;
+}
+
+.buttonHolder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.starting-cover {
+  background: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 800;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-cover {
+  background: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 400;
+}
+
+.login-logo {
+  padding: 25px;
+  padding-bottom: 15px;
+  height: 150px;
+  width: 150px;
+}
+
+.login-footer {
+  padding-top: 10px;
+  padding-bottom: 20px;
+  padding-left: 45px;
+  padding-right: 45px;
+}
+
+.centerHolder {
+  text-align: center;
+}
+
+
+#loginProgress {
+  display: none;
+}
+
+#loginError {
+  margin-top: 20px;
+  margin-button: 10px;
+  display: none;
+}
+
+
+.login-helper-cover {
+  background: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 300;
+}
+
+#signUpProgress {
+  display: none;
+}
+
+.signup-terms{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+
+#forgotPasswdProgress {
+  display: none;
+}

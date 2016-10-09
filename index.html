@@ -1,0 +1,157 @@
+<HTML>
+<head>
+  <title>Login Template</title>
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.teal-red.min.css" />
+  <script defer src="https://code.getmdl.io/1.2.1/material.min.js"></script>
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- SIGN IN -->
+<div id="loginPage" class=" mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-layout--no-drawer-button login-cover">
+  <main class="mdl-layout__content">
+    <div class="centerHolder">
+      <img src="img/logo_login.jpg" class="login-logo"> </img><BR/>
+      <p id="loginError"></p>
+      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+        <input class="mdl-textfield__input" type="text" id="loginEmail" value="leo@nexus.com">
+        <label class="mdl-textfield__label" for="email">Email ...</label>
+      </div><BR/>
+      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+        <input class="mdl-textfield__input" type="password" id="loginPassword" value="123456">
+        <label class="mdl-textfield__label" for="password">Password ...</label>
+      </div>
+    </div>
+    <div class="buttonHolder">
+      <button id="loginBtn" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored mdl-js-ripple-effect">
+        SIGN IN
+      </button>
+      <div id="loginProgress" class="mdl-spinner mdl-js-spinner is-active"></div>
+    </div>
+  </main>
+  <footer class="login-footer mdl-mini-footer mdl-color--white">
+    <div class="mdl-mini-footer__left-section">
+      <div class="mdl-logo  mdl-color-text--grey-800">
+        <a id="forgotPasswordLink" class="mdl-color-text--grey-600" href="#">Forgot Password?</a>
+      </div>
+    </div>
+    <div class="mdl-mini-footer__right-section">
+      <div class="mdl-logo mdl-color-text--grey-800">
+        <a id="signUpLink" class="mdl-color-text--grey-600" href="#">New Here? Sign up</a>
+      </div>
+    </div>
+  </footer>
+</div>
+
+<!-- SIGN UP -->
+<div id="signUpPage" class=" mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-layout--no-drawer-button login-helper-cover">
+  <main class="mdl-layout__content">
+    <div class="centerHolder">
+      <img src="img/logo_login.jpg" class="login-logo"> </img><BR/>
+      <p id="signUpError"></p>
+      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+        <input class="mdl-textfield__input" type="text" id="signUpEmail">
+        <label class="mdl-textfield__label" for="email">Email ...</label>
+      </div><BR/>
+      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+        <input class="mdl-textfield__input" type="password" id="signUpPassword">
+        <label class="mdl-textfield__label" for="password">Password ...</label>
+      </div><BR/>
+      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+        <input class="mdl-textfield__input" type="password" id="signUpPwdReenter">
+        <label class="mdl-textfield__label" for="password">Re-enter Password ...</label>
+      </div><BR/>
+      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+        <input class="mdl-textfield__input" type="text" id="signUpName">
+        <label class="mdl-textfield__label" for="name">Name ...</label>
+      </div>
+    </div>
+    <p class="signup-terms">
+      By tapping Create Account. I agree to the Terms of Service and Privacy Policy.
+    </p>
+    <div class="buttonHolder">
+      <button id="signUpBtn" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored mdl-js-ripple-effect">
+        Create account
+      </button>
+      <div id="signUpProgress" class="mdl-spinner mdl-js-spinner is-active"></div>
+    </div>
+  </main>
+  <footer class="login-footer mdl-mini-footer mdl-color--white">
+    <div class="mdl-mini-footer__right-section">
+      <a id="signInLink" class="mdl-color-text--grey-600" href="#">Sign In</a>
+    </div>
+  </footer>
+</div>
+
+<!-- FORGOT PASSWORD -->
+<div id="forgotPasswdPage" class=" mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-layout--no-drawer-button login-helper-cover">
+  <main class="mdl-layout__content">
+    <div class="centerHolder">
+      <img src="img/logo_login.jpg" class="login-logo"> </img><BR/>
+      <div id="forgetPasswdAsk">
+        <p id="forgotPasswdError"></p>
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+          <input class="mdl-textfield__input" type="text" id="forgotPasswdEmail" value="leo1@nexus.com">
+          <label class="mdl-textfield__label" for="email">Email ...</label>
+        </div><BR/>
+        <div class="buttonHolder">
+          <button id="forgotPasswdBtn" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored mdl-js-ripple-effect">
+            SIGN IN
+          </button>
+          <div id="forgotPasswdProgress" class="mdl-spinner mdl-js-spinner is-active"></div>
+        </div>
+      </div>
+    </div>
+    <div id="forgetPasswdConf" class="centerHolder">
+      <P> Email has been sent. </P>
+    </div>
+  </main>
+  <footer class="login-footer mdl-mini-footer mdl-color--white">
+    <div class="mdl-mini-footer__right-section">
+      <div class="mdl-logo mdl-color-text--grey-800">
+        <a id="signInForgotLink" class="mdl-color-text--grey-600" href="#">Sign In</a>
+      </div>
+    </div>
+  </footer>
+</div>
+
+
+<!-- START PAGE CONTENT -->
+<div id="startingPage" class="starting-cover"">
+  <div class="page-loader mdl-spinner mdl-js-spinner is-active"></div>
+</div>
+
+<!-- MAIN PAGE CONTENT -->
+  <div id="mainPage" class="mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-layout--no-drawer-button">
+    <header class="mdl-layout__header" >
+      <div class="mdl-layout-icon"></div>
+      <div class="mdl-layout__header-row">
+        <span class="mdl-layout__title">Bike Armour
+        </span>
+        <div class="mdl-layout-spacer"></div>
+        <nav class="mdl-navigation">
+          <button id="signOutBtn" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored mdl-js-ripple-effect">
+            SIGN OUT <i class="button-right-icon material-icons">account_circle</i>
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <main class="mdl-layout__content">
+
+       <!-- ADD YOUR CODE HERE -->
+       <!-- ADD YOUR CODE HERE -->
+       <!-- ADD YOUR CODE HERE -->
+       <!-- ADD YOUR CODE HERE -->
+
+    </main>
+  </div>
+
+  <script src="https://www.gstatic.com/firebasejs/3.4.0/firebase.js"></script>
+  <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+  <script src="script/index.js"></script>
+</body>
+</HTML>
